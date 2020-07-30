@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "RemoveADS",
+  "version": "0.0.1",
+  "description": "屏蔽广告",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.3dmgame.com/*"
+      ],
+      "js": [
+        "js/3dmgame.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.nicotv.club/*"
+      ],
+      "js": [
+        "js/nicotv.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.pcgamestorrents.com/*"
+      ],
+      "js": [
+        "js/pcgamestorrents.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
