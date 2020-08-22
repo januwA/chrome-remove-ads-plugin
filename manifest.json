@@ -27,8 +27,20 @@
       "js": [
         "js/pcgamestorrents.js"
       ]
+    },
+    {
+      "matches": [
+        "*://*.desktophut.com/*"
+      ],
+      "js": [
+        "js/desktophut.js"
+      ]
     }
   ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "permissions": [
     "tabs"
   ]
