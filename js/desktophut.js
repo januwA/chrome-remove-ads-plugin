@@ -4,11 +4,6 @@
 // });
 // chrome.runtime.sendMessage("i am content.js");
 
-function removeDom(select) {
-  let d = document.querySelector(select);
-  if (d) d.remove();
-}
-
 removeDom(".g1-injected-unit");
 removeDom("#custom_html-7");
 removeDom(".g1-sticky-widget-wrapper");

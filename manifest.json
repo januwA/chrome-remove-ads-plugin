@@ -6,6 +6,14 @@
   "content_scripts": [
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/utils.js"
+      ]
+    },
+    {
+      "matches": [
         "*://*.3dmgame.com/*"
       ],
       "js": [
@@ -35,10 +43,20 @@
       "js": [
         "js/desktophut.js"
       ]
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*"
+      ],
+      "js": [
+        "js/bilibili.js"
+      ]
     }
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
   "permissions": [

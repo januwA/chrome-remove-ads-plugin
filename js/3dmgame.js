@@ -1,8 +1,3 @@
-function removeDom(select) {
-  let d = document.querySelector(select);
-  if(d) d.remove();
-}
-
 removeDom('#index_bg_box')
 removeDom('.R_qingtianzhu');
 removeDom('.warp_gou');
