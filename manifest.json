@@ -51,6 +51,14 @@
       "js": [
         "js/bilibili.js"
       ]
+    },
+    {
+      "matches": [
+        "*://*.torrents2download.com/*"
+      ],
+      "js": [
+        "js/torrents2download.js"
+      ]
     }
   ],
   "background": {

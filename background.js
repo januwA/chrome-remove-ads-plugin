@@ -14,7 +14,7 @@
 // }
 
 // 需要过滤的网站
-const filterUrl = ["desktophut.com"];
+const filterUrl = ["desktophut.com", "torrents2download.com"];
 
 // 监听tabs的创建
 chrome.tabs.onCreated.addListener(function (tab) {
