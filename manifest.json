@@ -9,7 +9,8 @@
         "<all_urls>"
       ],
       "js": [
-        "js/utils.js"
+        "content/utils.js",
+        "shared/msg.js"
       ]
     },
     {
@@ -17,7 +18,7 @@
         "*://*.3dmgame.com/*"
       ],
       "js": [
-        "js/3dmgame.js"
+        "content/3dmgame.js"
       ]
     },
     {
@@ -25,7 +26,7 @@
         "*://*.nicotv.club/*"
       ],
       "js": [
-        "js/nicotv.js"
+        "content/nicotv.js"
       ]
     },
     {
@@ -33,7 +34,7 @@
         "*://*.pcgamestorrents.com/*"
       ],
       "js": [
-        "js/pcgamestorrents.js"
+        "content/pcgamestorrents.js"
       ]
     },
     {
@@ -41,7 +42,7 @@
         "*://*.desktophut.com/*"
       ],
       "js": [
-        "js/desktophut.js"
+        "content/desktophut.js"
       ]
     },
     {
@@ -49,7 +50,7 @@
         "*://*.bilibili.com/*"
       ],
       "js": [
-        "js/bilibili.js"
+        "content/bilibili.js"
       ]
     },
     {
@@ -57,15 +58,17 @@
         "*://*.torrents2download.com/*"
       ],
       "js": [
-        "js/torrents2download.js"
+        "content/torrents2download.js"
       ]
     }
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "page": "background/index.html",
     "persistent": false
+  },
+  "browser_action": {
+    "default_title": "config",
+    "default_popup": "popup/index.html"
   },
   "permissions": [
     "tabs",

@@ -2,16 +2,28 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (!msg.flag) return;
 
   if (msg.flag & MsgFlags.bilibili_com.load_liveid) {
-    if (msg?.data?.ids?.length) {
-      Array.from(document.querySelector(".list.clearfix").children).forEach(
-        (li) => {
-          const m = li.querySelector("a")?.href.match(/\/([0-9]+)\?/);
-          if (m && m[1] && msg.data?.ids?.includes(m[1])) {
-            li.style.transform = "scale(0)";
-          }
+    if (!msg?.data?.ids?.length) return;
+
+    const listLi = Array.from(
+      document.querySelector("ul.list")?.children ?? []
+    );
+    if (!listLi.length) return;
+
+    let index = 0;
+    listLi.forEach((li) => {
+      const m = li.querySelector("a")?.href.match(/\/([0-9]+)\?/);
+      const liveID = m[1] ?? 0;
+      if (msg?.data?.isAdd) {
+        if (m && liveID && msg.data?.ids?.includes(liveID)) {
+          li.style.filter = "blur(20px)";
+          if (index > msg.data?.ids.length) return true;
+          index++;
         }
-      );
-    }
+      } else {
+        if (m && liveID && liveID == msg?.data?.id)
+          return (li.style.filter = "blur(0px)");
+      }
+    });
   }
 });
 
