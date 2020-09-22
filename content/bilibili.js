@@ -29,9 +29,24 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 
 setInterval(() => {
   removeDom(".banner-card");
-}, 400);
-
-removeDom("#reportFirst2");
+  removeDom("#reportFirst2");
+  removeDom("#bili_manga");
+  removeDom("#bili_cheese");
+  removeDom("#bili_digital");
+  removeDom("#bili_life");
+  removeDom("#bili_information");
+  removeDom("#bili_ent");
+  removeDom("#bili_read");
+  removeDom("#bili_movie");
+  removeDom("#bili_teleplay");
+  removeDom("#bili_cinephile");
+  removeDom("#bili_documentary");
+  removeDom("#bili_report_spe_rec");
+  removeDom("#bili_fashion");
+  removeDom("#bili_technology");
+  removeDom("#bili_guochuang");
+  removeDom(".live-tabs");
+}, 1000);
 
 document.addEventListener("contextmenu", (e) => {
   const a = e.path.find((it) => {
