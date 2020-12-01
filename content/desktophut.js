@@ -1,9 +1,3 @@
-// 监听后台发来的消息
-// chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-//   console.log(message);
-// });
-// chrome.runtime.sendMessage("i am content.js");
-
 removeDom(".g1-injected-unit");
 removeDom("#custom_html-7");
 removeDom(".g1-sticky-widget-wrapper");
@@ -15,4 +9,14 @@ setInterval(() => {
       it.remove();
     }
   });
+
+  document.querySelectorAll("div").forEach((it) => {
+    if (it.style.zIndex && parseInt(it.style.zIndex) > 5000) {
+      it.remove();
+    }
+  });
+
+  document.querySelector('#vid-container0')?.remove()
+  document.querySelector('.ads')?.remove()
+
 }, 500);
