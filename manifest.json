@@ -15,6 +15,14 @@
     },
     {
       "matches": [
+        "*://blog.csdn.net/*"
+      ],
+      "js": [
+        "content/blog.csdn.net.js"
+      ]
+    },
+    {
+      "matches": [
         "*://*.3dmgame.com/*"
       ],
       "js": [
