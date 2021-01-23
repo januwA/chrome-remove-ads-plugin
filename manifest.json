@@ -39,7 +39,8 @@
     },
     {
       "matches": [
-        "*://*.pcgamestorrents.com/*"
+        "*://*.pcgamestorrents.com/*",
+        "*://*.igg-games.com/*"
       ],
       "js": [
         "content/pcgamestorrents.js"
