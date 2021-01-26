@@ -15,6 +15,14 @@
     },
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/all.js"
+      ]
+    },
+    {
+      "matches": [
         "*://blog.csdn.net/*"
       ],
       "js": [
@@ -27,14 +35,6 @@
       ],
       "js": [
         "content/3dmgame.js"
-      ]
-    },
-    {
-      "matches": [
-        "*://*.nicotv.club/*"
-      ],
-      "js": [
-        "content/nicotv.js"
       ]
     },
     {
