@@ -48,6 +48,14 @@
     },
     {
       "matches": [
+        "*://*.sourceforge.net/*"
+      ],
+      "js": [
+        "content/sourceforge.js"
+      ]
+    },
+    {
+      "matches": [
         "*://*.desktophut.com/*"
       ],
       "js": [
