@@ -3,6 +3,11 @@
   "name": "RemoveADS",
   "version": "0.0.1",
   "description": "屏蔽广告",
+  "icons": {
+    "16": "518486.png",
+    "48": "518486.png",
+    "128": "518486.png"
+  },
   "content_scripts": [
     {
       "matches": [
