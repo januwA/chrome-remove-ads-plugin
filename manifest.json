@@ -26,6 +26,16 @@
         "content/all.js"
       ]
     },
+
+    {
+      "matches": [
+        "*://*.superuser.com/*"
+      ],
+      "js": [
+        "content/superuser.com.js"
+      ]
+    },
+
     {
       "matches": [
         "*://blog.csdn.net/*"
