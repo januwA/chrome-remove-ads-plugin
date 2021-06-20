@@ -14,8 +14,7 @@
         "<all_urls>"
       ],
       "js": [
-        "content/utils.js",
-        "shared/msg.js"
+        "content/utils.js"
       ]
     },
     {
