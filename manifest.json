@@ -105,6 +105,14 @@
       "js": [
         "content/gitee.com.js"
       ]
+    },
+    {
+      "matches": [
+        "*://*.segmentfault.com/*"
+      ],
+      "js": [
+        "content/segmentfault.com.js"
+      ]
     }
   ],
   "background": {
