@@ -7,6 +7,7 @@ setInterval(() => {
   removeDom(".banner-card");
   removeDom("#reportFirst2");
   removeDom("#bili_manga");
+  removeDom("#bili_live");
   removeDom("#bili_cheese");
   removeDom("#bili_digital");
   removeDom("#bili_life");
